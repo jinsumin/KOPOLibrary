@@ -103,7 +103,7 @@ public class MemberManager implements ExcelManager {
 
     private ArrayList<String> getArrayListOfBookNo(String stringCellValue) {
         ArrayList<String> arrayList = new ArrayList<>();
-        StringTokenizer stringTokenizer = new StringTokenizer(stringCellValue, ",");
+        StringTokenizer stringTokenizer = new StringTokenizer(stringCellValue.substring(1, stringCellValue.length() - 1), ", ");
         while (stringTokenizer.hasMoreTokens()) {
             arrayList.add(stringTokenizer.nextToken());
         }
@@ -186,7 +186,6 @@ public class MemberManager implements ExcelManager {
                 row.createCell(Const.BOOK_CELL_IS_BORROWED_INDEX).setCellValue(isBorrowed);
             }
         }
-        System.out.println("멤버 업데이트");
         FileOutputStream fileOutputStream = new FileOutputStream(FILE_PATH + FILE_NAME);
         workbook.write(fileOutputStream);
     }
