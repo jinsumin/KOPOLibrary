@@ -21,16 +21,19 @@ library management project with java
 
 ## install and run KOPOLibrary
 
-###1. git clone
+### 1. git clone
+
 ```shell
 git clone git@github.com:jinsumin/KOPOLibrary.git
 cd KOPOLibrary
 idea .
 ```
-###2. build tools - maven
+### 2. build tools - maven
+
 build project with maven
 
-###3. apache poi setting
+### 3. apache poi setting
+
 dependency setting in pom.xml
 
 ```html
@@ -47,7 +50,8 @@ dependency setting in pom.xml
 </dependency>
 ```
 
-###4. lombok setting
+### 4. lombok setting
+
 dependency setting in pom.xml
 
 ```html
@@ -79,7 +83,7 @@ public class Book {
 ```
 
 
-###5. maven reload
+### 5. maven reload
 
 ---
 
@@ -94,6 +98,7 @@ java, apache poi, lombok
 ---
 
 ## excel manager interface
+
 create KOPOLibrary.xls Excel file with two sheets (member, book)
 ```java
 default void create() throws Exception {
@@ -125,6 +130,7 @@ default void create() throws Exception {
 ---
 
 ## book manager 
+
 add book
 ```java
 @Override
@@ -179,7 +185,8 @@ delete, get, isAvailable, ...
 
 ---
 
-##member manager
+## member manager
+
 add member
 ```java
 public void add() throws Exception {
@@ -218,7 +225,8 @@ delete, get, isContains, isMatched, ...
 
 ---
 
-##프로젝트 후기
+## 프로젝트 후기
+
  광명융합기술교육원에서 자바교육과정을 마치고 도서관리프로그램을 만들어보는 프로젝트를
 진행하였다. 
  최대한 배운내용을 적용하여 코드를 작성을 하였고 데이터를 저장하는 방식은
