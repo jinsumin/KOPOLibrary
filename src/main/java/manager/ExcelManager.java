@@ -12,7 +12,7 @@ import java.io.FileOutputStream;
  */
 
 public interface ExcelManager {
-    String FILE_PATH = "/Users/soomin/Documents/Projects/KopoLibrary3/src/main/java/records/";
+    String FILE_PATH = "/Users/soomin/Documents/Projects/KOPOLibrary/src/main/java/records/";
     String FILE_NAME = "KOPOLibrary.xls";
     String MEMBER_SHEET = "member";
     String BOOK_SHEET = "book";
