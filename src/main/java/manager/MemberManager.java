@@ -43,7 +43,7 @@ public class MemberManager implements ExcelManager {
         HSSFSheet sheet = workbook.getSheet(MEMBER_SHEET);
         HSSFRow row = sheet.createRow(sheet.getLastRowNum() + 1);
         row.createCell(0).setCellValue(member.getNo());
-        row.createCell(1).setCellValue(member.getName());
+        row.createCell(1).setCellValue(member.getId());
         row.createCell(2).setCellValue(member.getPassword());
         row.createCell(3).setCellValue(member.getName());
         row.createCell(4).setCellValue(member.getPhoneNumber());
