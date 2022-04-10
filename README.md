@@ -3,6 +3,22 @@ library management project with java
 
 ---
 
+## Requirements
+- 데이터 : member, book
+- 기능 : 회원등록, 회원삭제, 권한부여, 책등록, 책삭제, 책대여, 책반납
+
+---
+
+## Application Structure
+- assets : 정적 데이터
+- dto : 객체 단위의 데이터 교환을 위한 클래스
+- manager : 엑셀 CRUD
+- records : 엑셀 파일 저장 경로
+- util : 재사용 함수
+- view : 프로그램 사용자에게 띄울 view 관련
+
+---
+
 ## install and run KOPOLibrary
 
 ###1. git clone
