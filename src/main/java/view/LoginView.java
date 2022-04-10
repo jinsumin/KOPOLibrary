@@ -3,7 +3,7 @@ package view;
 import manager.MemberManager;
 import util.Input;
 
-import static assets.Const.EXIT;
+import static assets.Const.*;
 
 /**
  * Created by soomin on 2022/04/02
@@ -11,13 +11,13 @@ import static assets.Const.EXIT;
 
 public class LoginView {
     public void process() throws Exception {
-        int type = -1;
+        int type = DEFAULT;
         while (type != EXIT) {
             type = Input.getInt("1.로그인, 2.회원가입 0.나가기");
-            if (type == 1) {
+            if (type == LOGIN) {
                 type = logIn();
             }
-            if (type == 2) {
+            if (type == SIGNUP) {
                 type = signUp();
             }
         }

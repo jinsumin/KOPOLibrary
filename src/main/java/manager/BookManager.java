@@ -96,7 +96,6 @@ public class BookManager implements ExcelManager {
         String title = Input.getString("책 제목 : ");
         String author = Input.getString("저자 : ");
         if (isAvailableToBorrow(title, author)) {
-            System.out.println("대여 시작");
             MemberManager memberManager = MemberManager.getInstance();
             memberManager.updateMember(member, getBook(title, author));
         }

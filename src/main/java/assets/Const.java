@@ -8,6 +8,7 @@ public class Const {
     public static final int DEFAULT = -1;
     public static final int EXIT = 0;
     public static final int LOGIN = 1;
+    public static final int SIGNUP = 2;
     public static final int MEMBER_CELL_NO_INDEX = 0;
     public static final int MEMBER_CELL_ID_INDEX = 1;
     public static final int MEMBER_CELL_PW_INDEX = 2;

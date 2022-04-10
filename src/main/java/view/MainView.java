@@ -23,10 +23,8 @@ public class MainView {
                 case 3 -> bookManager.add();
                 case 4 -> bookManager.delete();
                 case 5 -> {
-                    System.out.println("대여 선택");
                     Member member = findMember();
                     if (member != null) {
-                        System.out.println("대여시작");
                         bookManager.borrowBook(member);
                     }
                 }
