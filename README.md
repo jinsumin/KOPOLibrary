@@ -11,7 +11,7 @@ library management project with java
 
 ## Application Structure
 - assets : 정적 데이터
-- dto : 객체 단위의 데이터 교환을 위한 클래스
+- vo : 객체 단위의 데이터 교환을 위한 클래스
 - manager : 엑셀 CRUD
 - records : 엑셀 파일 저장 경로
 - util : 재사용 함수

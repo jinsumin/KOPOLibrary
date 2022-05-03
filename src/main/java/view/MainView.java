@@ -3,7 +3,7 @@ package view;
 import manager.BookManager;
 import manager.MemberManager;
 import util.Input;
-import dto.Member;
+import vo.Member;
 
 import static assets.Const.EXIT;
 
@@ -13,8 +13,8 @@ import static assets.Const.EXIT;
 
 public class MainView {
     public int process() throws Exception {
-        MemberManager memberManager = MemberManager.getInstance();
-        BookManager bookManager = BookManager.getInstance();
+        MemberManager memberManager = new MemberManager();
+        BookManager bookManager = new BookManager();
         while (true) {
             int type = Input.getInt("1.멤버추가, 2.멤버삭제 3.도서추가 4.도서삭제 5.도서대여 6.도서반납 0.나가기");
             switch (type) {

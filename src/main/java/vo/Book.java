@@ -1,4 +1,4 @@
-package dto;
+package vo;
 
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;

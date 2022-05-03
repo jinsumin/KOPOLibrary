@@ -1,12 +1,12 @@
 package manager;
 
 import assets.Const;
-import dto.Book;
+import vo.Book;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import util.Input;
-import dto.Member;
+import vo.Member;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
